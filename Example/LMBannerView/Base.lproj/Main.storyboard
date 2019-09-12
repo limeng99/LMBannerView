@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,50 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfB-MY-sBH">
+                                <rect key="frame" x="137.5" y="340" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Ij-HI-IW8"/>
+                                    <constraint firstAttribute="width" constant="100" id="tBB-qt-qWM"/>
+                                </constraints>
+                                <state key="normal" title="Normal"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="duR-xW-FKh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGf-E4-DD7">
+                                <rect key="frame" x="137.5" y="400" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gpW-8J-1Vy"/>
+                                    <constraint firstAttribute="width" constant="100" id="kNn-fm-pZz"/>
+                                </constraints>
+                                <state key="normal" title="Linear"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="KeJ-pE-IIx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51W-Vw-0Bw">
+                                <rect key="frame" x="137.5" y="460" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h7p-YQ-jBJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="igM-HM-S1J"/>
+                                </constraints>
+                                <state key="normal" title="Coverflow"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="RWw-xR-h3X"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qfB-MY-sBH" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="320" id="1jo-dp-zQk"/>
+                            <constraint firstItem="IGf-E4-DD7" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="99E-x1-nDR"/>
+                            <constraint firstItem="IGf-E4-DD7" firstAttribute="top" secondItem="qfB-MY-sBH" secondAttribute="bottom" constant="20" id="N0O-lj-Fza"/>
+                            <constraint firstItem="51W-Vw-0Bw" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="OUz-EY-TrW"/>
+                            <constraint firstItem="51W-Vw-0Bw" firstAttribute="top" secondItem="IGf-E4-DD7" secondAttribute="bottom" constant="20" id="aV8-e7-bSV"/>
+                            <constraint firstItem="qfB-MY-sBH" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="lcQ-dy-nQZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>

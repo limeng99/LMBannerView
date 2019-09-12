@@ -4,6 +4,8 @@
 
 一个简单而实用的循环页导航视图和自动滚动条视图，包括自定义pageControl
 
+![image](https://github.com/limeng99/LMBannerView/blob/master/Example/LMBannerView.gif)
+
 ## 集成方式
 
 ```ruby

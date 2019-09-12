@@ -1,6 +1,0 @@
-framework module Pods_LMBannerView_Tests {
-  umbrella header "Pods-LMBannerView_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

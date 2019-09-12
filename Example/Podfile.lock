@@ -1,5 +1,5 @@
 PODS:
-  - LMBannerView (0.1.0)
+  - LMBannerView (0.1.1)
 
 DEPENDENCIES:
   - LMBannerView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LMBannerView: 87a8f07794cb3ab383bb8a8eef8abd9c170fd5d5
+  LMBannerView: 62bdd14797b93cb49a0a76aee8f47d236674c586
 
-PODFILE CHECKSUM: c6a29a61cd679533d48865a943c4737b0812a855
+PODFILE CHECKSUM: 5875450da6318c38ca0295211ef6d9c109abe4d2
 
 COCOAPODS: 1.7.5
