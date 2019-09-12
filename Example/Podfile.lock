@@ -1,0 +1,16 @@
+PODS:
+  - LMBannerView (0.1.0)
+
+DEPENDENCIES:
+  - LMBannerView (from `../`)
+
+EXTERNAL SOURCES:
+  LMBannerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LMBannerView: 87a8f07794cb3ab383bb8a8eef8abd9c170fd5d5
+
+PODFILE CHECKSUM: c6a29a61cd679533d48865a943c4737b0812a855
+
+COCOAPODS: 1.7.5

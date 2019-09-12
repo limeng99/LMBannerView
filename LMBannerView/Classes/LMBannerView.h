@@ -1,20 +1,28 @@
-# LMBannerView
+//
+//  LMBannerView.h
+//  LMBannerViewDemo
+//
+//  Created by LM on 2019/9/12.
+//  Copyright © 2019 LM. All rights reserved.
+//
 
-## 项目介绍
+#import <UIKit/UIKit.h>
+#import "LMBannerViewLayout.h"
 
-一个简单而实用的循环页导航视图和自动滚动条视图，包括自定义pageControl
+NS_ASSUME_NONNULL_BEGIN
 
-## 集成方式
+typedef struct {
+    NSInteger index;
+    NSInteger section;
+}LMIndexSection;
 
-```ruby
-pod 'LMBannerView'~>0.1.1
-```
+typedef NS_ENUM(NSUInteger, LMBannerScorllDirection) {
+    LMBannerScorllDirectionLeft,
+    LMBannerScorllDirectionRight,
+};
 
-## API
 
-*  DataSource and Delegate 
-```objc
-
+@class LMBannerView;
 @protocol LMBannerViewDataSource <NSObject>
 
 /// item number
@@ -44,12 +52,17 @@ pod 'LMBannerView'~>0.1.1
 - (void)bannerView:(LMBannerView *)bannerView initializeLayoutAttributes:(UICollectionViewLayoutAttributes *)attributes;
 - (void)bannerView:(LMBannerView *)bannerView applyLayoutToAttributes:(UICollectionViewLayoutAttributes *)attributes;
 
+/// scrollview delegate
+- (void)bannerViewDidScroll:(LMBannerView *)bannerView;
+- (void)bannerViewWillBeginDragging:(LMBannerView *)bannerView;
+- (void)bannerViewDidEndDragging:(LMBannerView *)bannerView willDecelerate:(BOOL)decelerate;
+- (void)bannerViewWillBeginDecelerating:(LMBannerView *)bannerView;
+- (void)bannerViewDidEndDecelerating:(LMBannerView *)bannerView;
+- (void)bannerViewWillBeginScrollingAnimation:(LMBannerView *)bannerView;
+- (void)bannerViewDidEndScrollingAnimation:(LMBannerView *)bannerView;
+
 @end
 
-```
-
-* Class
-```objc
 
 @interface LMBannerView : UIView
 
@@ -126,5 +139,4 @@ pod 'LMBannerView'~>0.1.1
 
 @end
 
-```
-
+NS_ASSUME_NONNULL_END

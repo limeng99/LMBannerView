@@ -1,0 +1,6 @@
+framework module LMBannerView {
+  umbrella header "LMBannerView-umbrella.h"
+
+  export *
+  module * { export * }
+}
