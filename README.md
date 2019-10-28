@@ -9,7 +9,7 @@
 ## 集成方式
 
 ```ruby
-pod 'LMBannerView'~>0.1.1
+pod 'LMBannerView'~>0.1.2
 ```
 
 ## API
